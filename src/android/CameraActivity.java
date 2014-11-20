@@ -120,11 +120,11 @@ public class CameraActivity extends Activity implements SensorEventListener {
             isFlash = false;
         }
 
+        flipCamera.setVisibility(View.INVISIBLE);
         if(Camera.getNumberOfCameras() > 1){
-            flipCamera.setVisibility(View.VISIBLE);
+            /* flipCamera.setVisibility(View.VISIBLE); */
             isFrontCamera = true;
         } else {
-            flipCamera.setVisibility(View.INVISIBLE);
             isFrontCamera = false;
         }
 
